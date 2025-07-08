@@ -1,13 +1,27 @@
 version: "3.1"
 
 rules:
-
-- rule: Say goodbye anytime the user says goodbye
+- rule: Respond to capability query
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+    - intent: ask_capabilities
+    - action: utter_capabilities
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Respond to creators query
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+    - intent: ask_creation
+    - action: utter_creation
+
+- rule: Respond to technical query
+  steps:
+    - intent: ask_technical
+    - action: utter_technical
+
+- rule: Greet user when greeted
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Wave off when waved
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye

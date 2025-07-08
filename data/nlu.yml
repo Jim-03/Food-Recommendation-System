@@ -322,3 +322,29 @@ nlu:
       - What technology powers you?
       - How do you work internally?
       - What algorithms do you use?
+
+  - intent: ask_food_recommendation
+    examples: |
+      - Can you suggest something for me to eat?
+      - I need help choosing what to eat
+      - What would you recommend I have for my next meal?
+      - Help me pick a good meal
+      - I'm unsure what to eat, any suggestions?
+      - Give me a food recommendation
+      - What's a good meal option right now?
+      - I need meal ideas
+      - What do you think I should eat?
+      - Can you propose a dish for me?
+      - Suggest a meal that would work for me
+      - I'd like your input on what to eat
+      - What's your top food suggestion?
+      - Guide me in selecting a meal
+      - I'm open to suggestions for food
+      - What meal do you advise?
+      - Please recommend something from your menu
+      - I need guidance on food choices
+      - What's your professional food recommendation?
+      - Could you propose a balanced meal?
+      - I'm looking for culinary suggestions
+      - Advise me on a good food selection
+      - What would be an ideal meal in your opinion?

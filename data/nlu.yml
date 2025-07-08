@@ -1,91 +1,321 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: goal_gain_muscle
+    examples: |
+      - What foods help with muscle growth?
+      - Best protein sources for muscle repair?
+      - How can I increase lean muscle mass?
+      - What to eat for muscle recovery after a workout?
+      - High-protein meals for muscle building?
+      - What nutrients support muscle hypertrophy?
+      - Best post-workout meals for muscle gain?
+      - How to optimize diet for muscle definition?
+      - What foods prevent muscle loss while cutting?
+      - Meal plan for lean muscle growth?
+      - What to eat to maximize muscle protein synthesis?
+      - Best snacks for muscle recovery?
+      - How much protein do I need for muscle building?
+      - What are the best muscle-building superfoods?
+      - Foods that help with muscle endurance?
+      - What should I eat before a strength training session?
+      - Best vegetarian foods for muscle growth?
+      - How to balance macros for muscle gain?
+      - What foods help with muscle cramps and recovery?
+      - Best supplements to support muscle building?
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goal_gain_weight
+    examples: |
+      - How can I gain weight quickly?
+      - What foods help increase body weight?
+      - Best high-calorie meals for weight gain?
+      - I'm underweight—what should I eat?
+      - How to bulk up without exercise?      
+      - What are the most calorie-dense foods?
+      - Easy ways to add more calories to my diet?
+      - Healthy fats for gaining weight?
+      - Best weight gain shakes?
+      - How to eat more calories in a day?      
+      - How to gain fat healthily?
+      - Foods that make you gain weight, not muscle?
+      - I want to look fuller, not muscular—what to eat?
+      - How to increase body fat percentage?
+      - Meal plan for skinny people to gain mass?      
+      - I have a fast metabolism—how to gain weight?
+      - What to eat if I have no appetite but need to gain weight?
+      - How to gain weight after an illness?
+      - Best foods for weight gain if I’m always full?
+      - How to gain weight without feeling bloated?
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: goal_maintain_weight
+    examples: |
+      - I want to maintain my current weight.
+      - Suggest food for weight maintenance.
+      - I'm happy with my weight, what should I eat?
+      - How can I keep my weight stable?
+      - Meals for maintaining a healthy lifestyle.
+      - I need food to stay at this weight.
+      - Recommend balanced meals.
+      - What food helps me maintain my physique?
+      - I'm looking for maintenance diet ideas.
+      - Suggest food to sustain my health.
+      - What should I eat to keep my current fitness level?
+      - Food for a stable weight.
+      - I want to continue eating healthy.
+      - Meals for long-term health.
+      - Help me maintain my progress.
+      - Food for a consistent weight.
+      - What can I eat to stay fit?
+      - Suggest everyday healthy meals.
+      - I'm looking for a balanced diet.
+      - Food for ongoing well-being.
+      - What should I eat to hold my weight?
+      - Meals to keep me healthy.
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: goal_energy
+    examples: |
+      - Recommend food for energy.
+      - I need food to boost my energy.      
+      - What should I eat to feel more energetic?      
+      - Food for sustained energy.      
+      - Suggest meals that give me a lift.      
+      - I'm looking for energy-boosting foods.      
+      - What helps with fatigue?      
+      - Meals to keep me alert.      
+      - I need food to power through my day.      
+      - Suggest nutrient-dense options.      
+      - What food is good for a pick-me-up?      
+      - I want to avoid energy crashes.      
+      - Food for vitality.      
+      - Help me stay energized.      
+      - Meals for peak performance.      
+      - What should I eat for a natural energy boost?      
+      - Food for mental clarity.      
+      - I'm looking for foods that provide stamina.      
+      - Suggest meals that are invigorating.      
+      - What can I eat to feel less tired?      
+      - Meals for an active lifestyle.      
+      - Food to keep me going.
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: goal_lose_weight
+    examples: |
+      - I want to lose weight.
+      - Help me with weight loss.      
+      - Suggest food for shedding kilos.      
+      - I need to cut down.      
+      - What should I eat to slim down?      
+      - Meals for weight reduction.      
+      - I'm on a weight loss journey.      
+      - Looking for low-calorie options.      
+      - Recommend food for fat loss.      
+      - I want to be lighter.      
+      - What can I eat to drop weight?      
+      - Healthy food for losing weight.      
+      - I need diet food.      
+      - Suggest a weight loss meal plan.      
+      - Food to help me get lean.      
+      - I'm trying to reduce my weight.      
+      - What's good for a calorie deficit?      
+      - Help me burn fat.      
+      - I want to get rid of excess weight.      
+      - Meals for a slimmer me.      
+      - Looking for a lighter diet.      
+      - Food for a healthier weight.      
+      - Suggest spinach and broccoli for weight loss.      
+      - What about fish for cutting down?      
+      - Low-carb options with eggs.      
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi
+      - Hey there
+      - Good morning
+      - Good afternoon
+      - Good evening
+      - Greetings
+      - Howdy
+      - What's up?
+      - Nice to meet you
+      - Hi bot
+      - Hello there
+      - Hey bot
+      - Are you there?
+      - Is anyone there?
+      - Can you help me?
+      - Hello, I need food ideas.
+      - Hi, looking for something to eat.
+      - Hey, food recommendations?
+      - Good day!
+      - Hello, chatbot!
+      - Hey, how are you?
+      
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+      - Later
+      - Farewell
+      - I'm done
+      - That's all for now
+      - Thanks, bye
+      - Gotta go
+      - See ya
+      - Adios
+      - Ciao
+      - I'm leaving
+      - End chat
+      - Close conversation
+      - Talk to you soon
+      - Bye for now
+      - Finished
+      - Done with this
+      - Okay, bye
+      - I'm out
+      - Thanks, I'm good
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: affirm
+    examples: |
+      - Yes
+      - Yeah
+      - Yup
+      - That's right
+      - Correct
+      - Indeed
+      - Absolutely
+      - Of course
+      - You got it
+      - Sounds good
+      - Okay
+      - Alright
+      - Sure
+      - Definitely
+      - That works
+      - I agree
+      - Precisely
+      - Exactly
+      - Right
+      - Affirmative
+      - Go ahead
+      - Proceed
+
+  - intent: deny
+    examples: |
+      - No
+      - Nope
+      - Nah
+      - That's wrong
+      - Incorrect
+      - Not really
+      - Absolutely not
+      - Of course not
+      - You're mistaken
+      - Doesn't sound good
+      - Not okay
+      - Not alright
+      - Definitely not
+      - That doesn't work
+      - I disagree
+      - Negative
+      - By no means
+      - No way
+      - Don't think so
+      - Not true
+      - Cancel that
+      - Stop
+  - intent: ask_for_more_recommendation
+    examples: |
+      - Give me another option.
+      - Any other ideas?
+      - What else do you have?
+      - Show me more.
+      - Next one, please.
+      - More recommendations.
+      - Another suggestion.
+      - What else can I eat?
+      - Show me something different.
+      - Can you give me more choices?
+      - More food ideas.
+      - Keep them coming.
+      - What's next?
+      - Another one.
+      - Anything else?
+      - More, please.
+      - Suggest something else.
+      - I need more options.
+      - Show me something new.
+      - What's your next best?
+      - Keep suggesting.
+      - Show me another.
+
+  - intent: ask_food_by_category
+    examples: |
+      - Recommend some fruits
+      - What cereals can I eat?
+      - Show me carbohydrate-rich meals
+      - I want protein sources
+      - Give me a list of vitamin foods
+      - List all protein-rich foods
+      - What are some healthy cereals?
+      - Any fruit recommendations?
+      - Can I get vitamin sources?
+      - Best foods from the carbohydrate group?
+      - List fruit options
+      - What foods fall under protein?
+      - Cereal food list please
+      - Vitamin-rich meal ideas?
+      - Carbohydrate food examples?
+      - I need a protein food list
+      - Suggest vitamin foods
+      - Healthy fruits  to eat?
+      - Which foods are carbs?
+      - Show carbohydrate options
+
+  - intent: ask_nutrition_info
+    examples: |
+      - How many calories in rice?
+      - What's the protein content in chapati?
+      - Does sweet potato have fiber?
+      - Is beans high in protein?
+      - Nutritional facts for wheat bread
+      - What is the fat content of sweet potato?
+      - Give me fiber details of beans
+      - Calorie count of cracked wheat bread
+      - Tell me about the nutrients in chapati
+      - What nutrients are in rice?
+      - Protein in sweet potato?
+      - How much fiber is in beans?
+      - Fat content in chapati?
+      - Calories in cracked wheat?
+      - Nutritional breakdown of beans
+      - What is in rice nutritionally?
+      - Fiber in wheat bread?
+      - Sugar and fat levels in sweet potato?
+      - Is chapati high in protein?
+      - What makes beans nutritious?
+
+  - intent: ask_bot_details
+    examples: |
+      - What can you do?
+      - What is your purpose?
+      - How do you work?
+      - Who created you?
+      - What kind of recommendations can you give?
+      - What are your capabilities?
+      - Can you tell me about yourself?
+      - What is your function?
+      - How do you provide food recommendations?
+      - What information do you use?
+      - Are you an AI?
+      - What is your name?
+      - How do you know about food?
+      - What are your features?
+      - Can you help me with recipes?
+      - What kind of data do you use?
+      - How do you learn?
+      - What are your limitations?
+      - Can you understand natural language?
+      - What is your core functionality?
+      - How do you process my requests?
+      - What kind of food knowledge do you have?

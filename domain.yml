@@ -1,33 +1,83 @@
 version: "3.1"
 
 intents:
+  - goal_gain_muscle
+  - goal_gain_weight
+  - goal_maintain_weight
+  - goal_energy
+  - goal_lose_weight
   - greet
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - ask_for_more_recommendation
+  - ask_food_by_category
+  - ask_nutrition_info
+  - ask_capabilities
+  - ask_creation
+  - ask_technical
+  - ask_food_recommendation
 
 responses:
+  utter_capabilities:
+    - text: |
+        I am a bot capable of:
+        * Kenyan food recommendation
+        * Nutritional Analysis
+    - text: |
+        I am to recommend Kenyan food items based on goals such as losing weight or gaining weight.
+    - text: |
+        I can help you discover Kenyan food items! I can recommend dishes based on your fitness goals like losing or gaining weight, or even for muscle gain and maintenance. I can also provide some nutritional insights.
+    - text: |
+        My main function is to suggest Kenyan meals. Tell me your meal type or even your health goals like improving digestion or boosting energy, and I'll find something for you!
+    - text: |
+        I'm here to be your personal Kenyan food guide! I can recommend meals, analyze their nutrition, and help you align your diet with specific goals such as improving athletic performance or boosting your immune system.
+    - text: |
+        Think of me as your culinary assistant for Kenyan cuisine. I can give you personalized food recommendations, help you understand the nutritional value of dishes, and assist with various health objectives like detox or weight management.
+    - text: |
+        I specialize in Kenyan food recommendations. Just let me know what you're looking for – whether it's for breakfast, lunch, or dinner, or if you have specific dietary needs or health goals, and I'll do my best to help!
+    - text: |
+        I can recommend a variety of Kenyan foods, provide nutritional breakdowns, and help you find meals tailored to your goals, be it weight loss, muscle gain, or simply maintaining a healthy lifestyle.
+    - text: |
+        My capabilities include suggesting Kenyan dishes, offering nutritional facts, and guiding you towards food choices that support your fitness goals, from weight management to enhancing your energy levels.
+    - text: |
+        I'm designed to be your go-to for Kenyan food. I can recommend dishes based on your preferences, dietary restrictions, meal times, and even specific health objectives like better digestion or a stronger immune system.
+
+  utter_creation:
+    - text: I am a bot developed by some students in Kabarak University as a school project.
+    - text: I was developed to provide food recommendations.
+    - text: I was built by a team of students at Kabarak University as part of a school assignment. My main goal is to help you find food recommendations.
+    - text: My creators are students from Kabarak University, who designed me for a university project. My function is to suggest food items.
+    - text: I'm an AI assistant created by Kabarak University students for an academic project, dedicated to offering food recommendations.
+    - text: As a school project from Kabarak University, I was developed to assist users with personalized food recommendations.
+    - text: I originated from a university project at Kabarak University, where students engineered me to offer food suggestions.
+    - text: My purpose is to recommend food, and I was brought to life by students at Kabarak University as part of their coursework.
+    - text: I am a programmatic entity, designed and implemented by students from Kabarak University for their educational curriculum, specifically to give food recommendations.
+
+  utter_technical:
+    - text: I am powered by the Rasa framework, a Python framework
+
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+    - text: Hello. How are you?
 
   utter_goodbye:
-  - text: "Bye"
+    - text: See you again 👋?
+    - text: Bye 👋
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_incapable:
+    - text: I'm sorry but I can't assist you with that 🥲!
+    - text: As a basic AI model I can't assist you with that
+    - text: My training data is limited. I can't process your information 🥲!
+
+  utter_assistance:
+    - text: How may I help you today 😀?
+
+  utter_more_clarity:
+    - text: Would you like another recommendation?
+    - text: Do you want another recommendation
+
+actions:
+  - action_recommend_food
 
 session_config:
   session_expiration_time: 60

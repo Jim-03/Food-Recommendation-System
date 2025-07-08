@@ -2,29 +2,51 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: New user (sad path)
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_incapable
+    - action: utter_capabilities
 
-- story: sad path 1
+- story: New User (happy path)
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_assistance
+    - intent: ask_capabilities
+    - action: utter_capabilities
 
-- story: sad path 2
+- story: Ask for any recommendation
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+    - intent: ask_food_recommendation
+    - action: action_recommend_food
+
+- story: Negative response to recommendation
+  steps:
+    - or:
+        - intent: goal_gain_muscle
+        - intent: goal_gain_weight
+        - intent: goal_maintain_weight
+        - intent: goal_energy
+        - intent: goal_lose_weight
+    - action: action_recommend_food
+    - intent: deny
+    - action: utter_more_clarity
+    - intent: deny
+    - action: utter_incapable
+
+- story: Positive response to recommendation
+  steps:
+    - or:
+        - intent: goal_gain_muscle
+        - intent: goal_gain_weight
+        - intent: goal_maintain_weight
+        - intent: goal_energy
+        - intent: goal_lose_weight
+    - action: action_recommend_food
+    - intent: affirm
+    - action: action_recommend_food
+

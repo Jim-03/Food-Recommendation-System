@@ -295,27 +295,29 @@ nlu:
       - Is chapati high in protein?
       - What makes beans nutritious?
 
-  - intent: ask_bot_details
+  - intent: ask_capabilities
     examples: |
       - What can you do?
-      - What is your purpose?
-      - How do you work?
-      - Who created you?
-      - What kind of recommendations can you give?
-      - What are your capabilities?
-      - Can you tell me about yourself?
-      - What is your function?
-      - How do you provide food recommendations?
-      - What information do you use?
-      - Are you an AI?
-      - What is your name?
-      - How do you know about food?
-      - What are your features?
-      - Can you help me with recipes?
-      - What kind of data do you use?
-      - How do you learn?
-      - What are your limitations?
-      - Can you understand natural language?
-      - What is your core functionality?
-      - How do you process my requests?
-      - What kind of food knowledge do you have?
+      - List your functions
+      - What services do you provide?
+      - What are you capable of?
+      - Show me your skills
+      - What do you offer?
+
+  - intent: ask_creation
+    examples: |
+      - Who built you?
+      - What's your origin story?
+      - Who developed you?
+      - Where were you created?
+      - Who made this bot?
+      - Who programmed you?
+
+  - intent: ask_technical
+    examples: |
+      - How are you trained?
+      - What's your backend?
+      - Do you use AI?
+      - What technology powers you?
+      - How do you work internally?
+      - What algorithms do you use?

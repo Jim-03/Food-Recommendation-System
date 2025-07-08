@@ -303,6 +303,7 @@ nlu:
       - What are you capable of?
       - Show me your skills
       - What do you offer?
+      - Who are you?
 
   - intent: ask_creation
     examples: |

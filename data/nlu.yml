@@ -199,6 +199,7 @@ nlu:
       - Affirmative
       - Go ahead
       - Proceed
+      - I'm good
 
   - intent: deny
     examples: |
